@@ -1,7 +1,7 @@
 simple react toaster component for show notifications 
 
 how to use:
-
+```
 import {NotificationToast, ToastEvent, toastEventManager } from 'dyzz-toaster';
 
 
@@ -12,9 +12,10 @@ export const Button = () =>
 
 export function App() {
     return (
-      <>
-       <NotificationToast/>
-       <Button/>
-       </>
+        <>
+            <NotificationToast/>
+            <Button/>
+        </>
     )
 }
+```
