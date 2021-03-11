@@ -1,7 +1,7 @@
 import  { useEffect, useRef, useState } from 'react';
 import * as React from 'react';
 import { ToasterTimer } from '../utils/timer';
-import {INotificationToast, IToasterData} from './index';
+import {INotificationToast, IToasterData, IToasterTypes} from './index';
 import toasterStyles from "./toaster-styles.css";
 
 
@@ -12,7 +12,8 @@ export const Toaster: React.FC<IToaster> = ({
                                               timeOutDelay,
                                               indicateLine,
     toastClassName,
-    progressIndicatorClassName
+    progressIndicatorClassName,
+    type
                                             }) => {
   const [timer, setTimer] = useState<ITimer | null>(null);
   const [toasterRemainingPercentage, setToasterRemainingPercentage] = useState(
@@ -71,12 +72,23 @@ export const Toaster: React.FC<IToaster> = ({
     }
   };
 
+  const returnToasterTypeClassName = () => {
+    switch (type) {
+      case IToasterTypes.NOTIFICATION:
+        return toasterStyles.notificationToast;
+      case IToasterTypes.ERROR:
+        return toasterStyles.errorToast;
+      default:
+        return ''
+    }
+  }
+
   const showFadeOut =
       (timeOutDelay && toasterRemainingPercentage <= 0) || fadeOut;
 
   return (
       <div
-          className={`${toasterStyles.toast} ${showFadeOut ? toasterStyles.fadeOut : ''} ${toastClassName || ''}`}
+          className={`${toasterStyles.toast} ${showFadeOut ? toasterStyles.fadeOut : ''} ${toastClassName || ''} ${returnToasterTypeClassName()}`}
           onClick={() => deleteCallback(id || '')}
           onMouseEnter={() => timer?.pause()}
           onMouseLeave={() => timer?.resume()}

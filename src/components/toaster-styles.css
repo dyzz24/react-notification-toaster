@@ -43,6 +43,16 @@
     display: flex;
 }
 
+.notificationToast {
+    color: #FFFFFF;
+    background: #1D2023;
+}
+
+.errorToast {
+    color: #FFFFFF;
+    background: #E30611;
+}
+
 .fadeOut {
     animation: fadeOutAnimation 0.2s linear ;
     animation-fill-mode: forwards;
@@ -61,6 +71,10 @@
     background-color: #E30611;
     z-index: 1;
     transition: 0.3s;
+}
+
+.errorToast > .toasterPercentage {
+    background-color: #000000;
 }
 
 @media screen and (max-width: 768px) {

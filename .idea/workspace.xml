@@ -21,7 +21,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2899a6d-2d8d-4b5c-af4f-2c955e2ac269" name="Default Changelist" comment="" />
+    <list default="true" id="f2899a6d-2d8d-4b5c-af4f-2c955e2ac269" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/toaster-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/toaster-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/toaster-styles.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/toaster-styles.css.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/toaster.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/toaster.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +82,9 @@
       <workItem from="1614852129463" duration="272000" />
       <workItem from="1614852408746" duration="197000" />
       <workItem from="1614852616627" duration="2443000" />
-      <workItem from="1614863632880" duration="938000" />
+      <workItem from="1614863632880" duration="2021000" />
+      <workItem from="1614927600684" duration="6000" />
+      <workItem from="1615453706458" duration="1152000" />
     </task>
     <task id="LOCAL-00001" summary="timer fix">
       <created>1614844134829</created>
@@ -90,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614859183531</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix readme file">
+      <created>1614866163120</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614866163120</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,21 +123,23 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="timer fix" />
     <MESSAGE value="rollup config, css parser" />
-    <option name="LAST_COMMIT_MESSAGE" value="rollup config, css parser" />
+    <MESSAGE value="fix readme file" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix readme file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="693" y="649" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614857618479">
       <screen x="0" y="360" width="1920" height="1080" />
     </state>
     <state x="693" y="649" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1614857618479" />
-    <state x="499" y="448" width="912" height="911" key="CommitChangelistDialog2" timestamp="1614859183464">
+    <state x="499" y="448" width="912" height="911" key="CommitChangelistDialog2" timestamp="1614866163065">
       <screen x="0" y="360" width="1920" height="1080" />
     </state>
-    <state x="499" y="448" width="912" height="911" key="CommitChangelistDialog2/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1614859183464" />
+    <state x="499" y="448" width="912" height="911" key="CommitChangelistDialog2/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1614866163065" />
     <state x="738" y="647" width="424" height="520" key="FileChooserDialogImpl" timestamp="1614854737263">
       <screen x="0" y="360" width="1920" height="1080" />
     </state>

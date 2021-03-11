@@ -84,6 +84,7 @@ export interface IToasterData {
 
 export enum IToasterTypes {
   NOTIFICATION = 'notification',
+  ERROR = 'error'
 }
 
 export interface INotificationToast {
