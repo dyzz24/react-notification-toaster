@@ -23,12 +23,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f2899a6d-2d8d-4b5c-af4f-2c955e2ac269" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/toaster-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/toaster-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/toaster-styles.css.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/toaster-styles.css.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/toaster.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/toaster.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/toast-event-manager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/toast-event-manager.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +81,8 @@
       <workItem from="1614852616627" duration="2443000" />
       <workItem from="1614863632880" duration="2021000" />
       <workItem from="1614927600684" duration="6000" />
-      <workItem from="1615453706458" duration="1152000" />
+      <workItem from="1615453706458" duration="2090000" />
+      <workItem from="1627463174161" duration="154000" />
     </task>
     <task id="LOCAL-00001" summary="timer fix">
       <created>1614844134829</created>
@@ -107,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614866163120</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new toaster type">
+      <created>1615454869868</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615454869868</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,44 +134,13 @@
     <MESSAGE value="timer fix" />
     <MESSAGE value="rollup config, css parser" />
     <MESSAGE value="fix readme file" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix readme file" />
+    <MESSAGE value="new toaster type" />
+    <option name="LAST_COMMIT_MESSAGE" value="new toaster type" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="693" y="649" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614857618479">
-      <screen x="0" y="360" width="1920" height="1080" />
+    <state x="2927" y="472" width="618" height="522" key="find.popup" timestamp="1627463216709">
+      <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="693" y="649" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1614857618479" />
-    <state x="499" y="448" width="912" height="911" key="CommitChangelistDialog2" timestamp="1614866163065">
-      <screen x="0" y="360" width="1920" height="1080" />
-    </state>
-    <state x="499" y="448" width="912" height="911" key="CommitChangelistDialog2/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1614866163065" />
-    <state x="738" y="647" width="424" height="520" key="FileChooserDialogImpl" timestamp="1614854737263">
-      <screen x="0" y="360" width="1920" height="1080" />
-    </state>
-    <state x="738" y="647" width="424" height="520" key="FileChooserDialogImpl/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1614854737263" />
-    <state width="1897" height="284" key="GridCell.Tab.0.bottom" timestamp="1614851814592">
-      <screen x="0" y="360" width="1920" height="1080" />
-    </state>
-    <state width="1897" height="284" key="GridCell.Tab.0.bottom/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1614851814592" />
-    <state width="1897" height="284" key="GridCell.Tab.0.center" timestamp="1614851814592">
-      <screen x="0" y="360" width="1920" height="1080" />
-    </state>
-    <state width="1897" height="284" key="GridCell.Tab.0.center/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1614851814592" />
-    <state width="1897" height="284" key="GridCell.Tab.0.left" timestamp="1614851814592">
-      <screen x="0" y="360" width="1920" height="1080" />
-    </state>
-    <state width="1897" height="284" key="GridCell.Tab.0.left/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1614851814592" />
-    <state width="1897" height="284" key="GridCell.Tab.0.right" timestamp="1614851814592">
-      <screen x="0" y="360" width="1920" height="1080" />
-    </state>
-    <state width="1897" height="284" key="GridCell.Tab.0.right/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1614851814592" />
-    <state x="651" y="639" width="618" height="522" key="find.popup" timestamp="1614853107634">
-      <screen x="0" y="360" width="1920" height="1080" />
-    </state>
-    <state x="651" y="639" width="618" height="522" key="find.popup/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1614853107634" />
-    <state x="624" y="425" key="run.anything.popup" timestamp="1614858082217">
-      <screen x="0" y="360" width="1920" height="1080" />
-    </state>
-    <state x="624" y="425" key="run.anything.popup/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1614858082217" />
+    <state x="2927" y="472" width="618" height="522" key="find.popup/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1627463216709" />
   </component>
 </project>

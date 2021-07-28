@@ -2,13 +2,17 @@ simple react toaster component for show notifications
 
 how to use:
 ```
-import {NotificationToast, ToastEvent, toastEventManager } from 'dyzz-toaster';
+import {IToasterTypes, NotificationToast, ToastEvent, toastEventManager} from 'dyzz-toaster';
 
 
-export const Button = () => 
-<button onClick={() => {toastEventManager.emit(ToastEvent.CREATE, 
-{timeOutDelay: 4000, indicateLine: true, text: 'SHOW'})
-}}>show toast</button>
+export const Button = () =>
+    <button onClick={() => {
+        toastEventManager.emit(ToastEvent.CREATE,
+        {timeOutDelay: 9000, indicateLine: true, text: 'it is error toaster', type: IToasterTypes.ERROR})
+
+        toastEventManager.emit(ToastEvent.CREATE,
+            {timeOutDelay: 7000, indicateLine: true, text: 'it is notification toaster', type: IToasterTypes.NOTIFICATION})
+    }}>show toast</button>
 
 export function App() {
     return (
